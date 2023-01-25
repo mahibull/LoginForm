@@ -1,0 +1,13 @@
+*{margin: :0;padding: :0;}
+body{background-color:#c9d6f3;}
+.main-div{background:#9980FA;width:300px;height: 500px;border-radius:10px;border:1px solid #fff;box-shadow: 2px 5px 20px #ddd;}
+img{width:300px;margin-top: 0px;}
+h3{color:#fff;}
+.email{padding:10px;border-radius:20px;margin-top:12px;border: none;width: 250px;text-align: center;}
+.Pass{padding:10px;border-radius:20px;margin-top:12px;border: none;width: 250px;text-align: center;}
+.checkbox{float: left;margin-left:20px ;display: inline-block;margin-top: 17px;}
+p{display: inline-block;float: left;color: #fff;}
+span{margin-top: 100px; color: #fff;}
+.submit{width:200px ; height: 35px;background:dodgerblue;color: #fff;border:none; border-radius:20px;cursor:pointer;}
+.submit:hover{background:#ddd;transition: 0.5s;}
+::placeholder{color:deeppink;border-color: aqua;opacity: 0.2;}
